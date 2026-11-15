@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://b7ogihtp1f8gt"]
+
+[ext_resource type="Theme" uid="uid://d2hv3njyknurb" path="res://new_theme.tres" id="1_il3u1"]
+
+[node name="LevelSelect" type="Control" unique_id=1130599270]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_il3u1")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1954515067]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.09820997, 0.12369216, 0.19163227, 1)
+
+[node name="Center" type="CenterContainer" parent="." unique_id=1026465299]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Content" type="VBoxContainer" parent="Center" unique_id=200555011]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="TitleLabel" type="Label" parent="Center/Content" unique_id=215658271]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9607843, 0.827451, 0.41960785, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 48
+text = "Select Level"
+horizontal_alignment = 1
+
+[node name="LevelGrid" type="GridContainer" parent="Center/Content" unique_id=2011665066]
+layout_mode = 2
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 5
+
+[node name="Button1" type="Button" parent="Center/Content/LevelGrid" unique_id=387844651]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "1"
+
+[node name="Button2" type="Button" parent="Center/Content/LevelGrid" unique_id=627927124]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "2"
+
+[node name="Button3" type="Button" parent="Center/Content/LevelGrid" unique_id=1515266470]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "3"
+
+[node name="Button4" type="Button" parent="Center/Content/LevelGrid" unique_id=226963572]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "4"
+
+[node name="Button5" type="Button" parent="Center/Content/LevelGrid" unique_id=965421514]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "5"
+
+[node name="Button6" type="Button" parent="Center/Content/LevelGrid" unique_id=1482636058]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "6"
+
+[node name="Button7" type="Button" parent="Center/Content/LevelGrid" unique_id=1050072764]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "7"
+
+[node name="Button8" type="Button" parent="Center/Content/LevelGrid" unique_id=495265920]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "8"
+
+[node name="Button9" type="Button" parent="Center/Content/LevelGrid" unique_id=1652586977]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "9"
+
+[node name="Button10" type="Button" parent="Center/Content/LevelGrid" unique_id=263929990]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "10"
