@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://c1neffieklxqo"]
+
+[ext_resource type="Script" uid="uid://blsp2aabshit0" path="res://play.gd" id="1_d7cv5"]
+
+[sub_resource type="Gradient" id="Gradient_cha30"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_mpjgw"]
+gradient = SubResource("Gradient_cha30")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5046948, 0.058685444)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s0xme"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ykjjl"]
+bg_color = Color(0.6745098, 0.56078434, 0, 0.8901961)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.93339545, 0.79333043, 0, 1)
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="homepage" type="Control" unique_id=1683887361]
+layout_mode = 3
+anchor_right = 0.9982639
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+metadata/_edit_use_anchors_ = true
+
+[node name="background" type="TextureRect" parent="." unique_id=1596556049]
+modulate = Color(0.09803922, 0.03137255, 0.15294118, 1)
+self_modulate = Color(0.25932035, 0.20429263, 1, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_mpjgw")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=358329818]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=100977749]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="title" type="Label" parent="CenterContainer/VBoxContainer" unique_id=486695768]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3019608, 0.79607844, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0.4, 0.9490196, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 11
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_s0xme")
+text = "REBOUND"
+horizontal_alignment = 1
+
+[node name="subtitle" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1846883853]
+modulate = Color(0.54886526, 0.5412758, 0, 0.9490196)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "\"Reach The Glow\""
+horizontal_alignment = 1
+
+[node name="spacer" type="Control" parent="CenterContainer/VBoxContainer" unique_id=64415413]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="play" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1340975606]
+custom_minimum_size = Vector2(200, 45)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.893033, 0.8656033, 0.8850067, 1)
+theme_override_colors/font_focus_color = Color(0.94205475, 0.94730395, 0.97920257, 1)
+theme_override_colors/font_hover_color = Color(0.95369023, 0.9473656, 0.9477816, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_ykjjl")
+text = "START
+"
+script = ExtResource("1_d7cv5")
